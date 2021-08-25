@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#162e58, #5c87b7);
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 95%;
+  margin: auto;
+  padding: 0.5rem;
+  /* text-align: center; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 1rem;
+  font-size: 18px;
+  color: white;
+}
+
+li:hover {
+  color: #f3e300 ;
+}
+
+h1 {
+  color: #f3422e;
+  margin-bottom: 0.5rem;
+  font-size: 38px;
+  text-shadow: 5px 3px 3px rgba(255, 255, 255, 0.28)
+}
+
+#h11:hover {
+    color: #f3e300b7;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.349)
+
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+    padding: 1rem 0;
+}
+
+.container0 {
+  padding: 20px 20px;
+  color: white;
+  border-radius: 8px;
+    background: #9c9c9c4f;
+    margin: 10px 0 0;
+    box-shadow: 0 0 11px 0px rgba(101, 101, 101, 0.53);
+}
+
+.container0 h2 {
+  padding: 10px 0px;
+}
+
+.linea {
+  width:auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+  margin: 0px 0 10px 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 15rem auto;
+  height: 15rem;
+  background: #fff;
+  box-shadow: 2px 2px 4px 0px rgba(175, 175, 175, 0.95);
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card--avatar {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  transition: transform .9s;
+}
+
+.card--avatar:hover {
+  transform: scale(1.1);
+}
+
+.card--title {
+  color: #222;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.card--link {
+  text-decoration: none;
+  background: #f3422e;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 18px;
+}
+
+.card--link:hover {
+    /* background: #f3e300;
+    color: #222;
+    transition-duration: 0.7s ; */
+  animation-duration: 1.9s ;
+  animation-name: cambia;
+  animation-iteration-count: infinite;
+  
+}
+/*FORMULARIO*/
+.final {
+  display: flex;
+  justify-content: center;
+margin:1px 12px;
+width:auto;
+height: auto;
+margin-top: 21px;
+
+}
+
+#form {
+  /* display: inline-grid; */
+  border: #00000054 1px solid;
+  padding: 10px;
+  border-radius: 18px;
+  /* height: 350px; */
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 11px 0px rgba(101, 101, 101, 0.53);
+  background-color: white;
+}
+label {
+  display:block;
+  margin-top:20px;
+  letter-spacing:1px;
+  text-shadow: 2px 2px 4px grey;
+  
+}
+
+input, textarea {
+  width:330px;
+  height:33px;
+  background:rgba(255, 255, 255, 0.62);
+  border:0px solid #d4d1d1;
+  padding:10px;
+  margin-top:5px;
+  font-size:14px;
+  font-family: 'Nunito', sans-serif;
+  color:rgb(61, 61, 61);
+  border-radius: 6px ;
+  box-shadow: 1px 1px 4px 1px #9a9a9a;
+  transition: all .3s ease-out;
+  
+}
+
+textarea:hover {
+  background:#91909044;
+  box-shadow: 2px 2px 12px rgb(207, 207, 207);
+}
+
+input:hover {
+  background:#91909044;
+  box-shadow: 2px 2px 12px rgb(207, 207, 207);
+}
+
+textarea {
+  height:150px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#submit {
+  width:85px;
+  height:35px;
+  border:none;
+  margin-top:20px;
+  cursor:pointer;
+  border:0px solid #d4d1d1;
+}
+
+
+
+
+@keyframes cambia {
+  0%   {background-color: #f3422e;}
+  50%  {background-color: #f3e300; color: #222;}
+  100% {background-color: #f3422e;}
+}
+
+/* 0%   {background-color:red; left:0px; top:0px;}
+25%  {background-color:yellow; left:200px; top:0px;}
+50%  {background-color:blue; left:200px; top:200px;}
+75%  {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;} */
+
+@media (max-width: 640px){
+  h1 {
+    font-size: 24px;
+    /* margin: 10px; */
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-gap: 1rem;
+  }
+
+   nav {
+    display: block;
+  }
+
+  ul {
+    margin: 0px 69px;
+  } 
+
+  
+}
