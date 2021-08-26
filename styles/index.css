@@ -4,11 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: linear-gradient(#162e58, #5c87b7);
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
+
 }
 
 main {
@@ -29,13 +33,15 @@ ul {
   cursor: pointer;
 }
 
-li {
+a {
   margin-right: 1rem;
   font-size: 18px;
   color: white;
+  text-decoration: none;
+
 }
 
-li:hover {
+a:hover {
   color: #f3e300 ;
 }
 
