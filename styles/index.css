@@ -100,6 +100,7 @@ h1 {
   border-radius: 10px;
   margin: auto;
   overflow: hidden;
+  width: -webkit-fill-available;
 }
 
 .card--avatar {
